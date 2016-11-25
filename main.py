@@ -1,6 +1,7 @@
 # Python modules
 from flask import Flask, render_template
 import jinja2
+import logging
 
 # Google modules
 from google.appengine.api import users
