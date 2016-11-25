@@ -1,0 +1,11 @@
+application: cloud-training-144023
+version: alpha001
+runtime: python27
+app_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: main.app
+  login: required
+  secure: always
