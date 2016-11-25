@@ -18,7 +18,7 @@ def user_page(username):
 	# If user is logged in
 	if user:
 		nickname = users.nickname()
-		login_logout_url = users.create_logout_url('/')
+		login_logout_url = user.create_logout_url('/')
 		# next line is binding. logged in user must match the page they are requesting
 		if username == nickname:
 			# allow them to view the page
