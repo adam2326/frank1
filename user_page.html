@@ -15,9 +15,7 @@
 
 <div class="container">
 	<h1>Opportunities: {{ nickname }}  <small><a href="{{ login_logout_url }}">sign out</a></small></h1>
-	<form>
-		<input type="submit" name="create_new_opportunity" value="Create New Opportunity">
-	</form>
+	<a href="{{ url_for('add_opportunity') }}" class="btn btn-info" role="button">Create New Opportunity</a>
 </div>
 
 
